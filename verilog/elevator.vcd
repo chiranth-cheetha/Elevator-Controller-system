@@ -1,0 +1,603 @@
+$date
+	Sat Sep  5 21:03:51 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module elevator_tb $end
+$var wire 5 ! pending_requests [4:0] $end
+$var wire 5 " hall_up_requests [4:0] $end
+$var wire 5 # hall_down_requests [4:0] $end
+$var wire 1 $ door_open $end
+$var wire 2 % direction [1:0] $end
+$var wire 3 & current_floor [2:0] $end
+$var wire 5 ' cabin_requests [4:0] $end
+$var reg 5 ( cabin_request [4:0] $end
+$var reg 1 ) clk $end
+$var reg 5 * hall_down_request [4:0] $end
+$var reg 5 + hall_up_request [4:0] $end
+$var reg 1 , reset $end
+$scope module DUT $end
+$var wire 5 - cabin_request [4:0] $end
+$var wire 1 ) clk $end
+$var wire 5 . hall_down_request [4:0] $end
+$var wire 5 / hall_up_request [4:0] $end
+$var wire 5 0 pending_requests [4:0] $end
+$var wire 1 , reset $end
+$var parameter 2 1 DOWN $end
+$var parameter 2 2 IDLE $end
+$var parameter 2 3 UP $end
+$var reg 5 4 cabin_requests [4:0] $end
+$var reg 3 5 current_floor [2:0] $end
+$var reg 2 6 direction [1:0] $end
+$var reg 1 $ door_open $end
+$var reg 3 7 door_timer [2:0] $end
+$var reg 5 8 hall_down_requests [4:0] $end
+$var reg 5 9 hall_up_requests [4:0] $end
+$scope function has_request_above $end
+$var reg 3 : floor [2:0] $end
+$var integer 32 ; i [31:0] $end
+$upscope $end
+$scope function has_request_below $end
+$var reg 3 < floor [2:0] $end
+$var integer 32 = i [31:0] $end
+$upscope $end
+$scope function has_request_here $end
+$var reg 3 > floor [2:0] $end
+$upscope $end
+$upscope $end
+$scope task cabin_request_task $end
+$var integer 32 ? floor [31:0] $end
+$upscope $end
+$scope task hall_down_task $end
+$var integer 32 @ floor [31:0] $end
+$upscope $end
+$scope task hall_up_task $end
+$var integer 32 A floor [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 3
+b10 2
+b0 1
+$end
+#0
+$dumpvars
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 0
+b0 /
+b0 .
+b0 -
+1,
+b0 +
+b0 *
+0)
+b0 (
+bx '
+bx &
+bx %
+x$
+bx #
+bx "
+bx !
+$end
+#5000
+b0 !
+b0 0
+b0 '
+b0 4
+b0 #
+b0 8
+b0 "
+b0 9
+b0 7
+0$
+b10 %
+b10 6
+b0 &
+b0 5
+1)
+#10000
+0)
+#15000
+1)
+#20000
+0)
+b10000 (
+b10000 -
+b100 ?
+0,
+#25000
+b10000 !
+b10000 0
+b1 &
+b1 5
+b1 %
+b1 6
+b10000 '
+b10000 4
+b101 ;
+b0 :
+b0 >
+1)
+#30000
+0)
+b10 ?
+b100 (
+b100 -
+#35000
+b10100 !
+b10100 0
+b10 &
+b10 5
+b10100 '
+b10100 4
+b101 ;
+b1 :
+b1 >
+1)
+#40000
+0)
+b11 ?
+b1000 (
+b1000 -
+#45000
+b11100 !
+b11100 0
+1$
+b10 %
+b10 6
+b11100 '
+b11100 4
+b10 >
+1)
+#50000
+0)
+b0 (
+b0 -
+#55000
+b1 7
+1)
+#60000
+0)
+#65000
+b11110 !
+b11110 0
+b10 7
+b10 "
+b10 9
+1)
+b10 +
+b10 /
+b1 A
+#70000
+0)
+#75000
+b11010 !
+b11010 0
+b11000 '
+b11000 4
+b0 7
+0$
+1)
+b0 +
+b0 /
+#80000
+0)
+#85000
+b11 &
+b11 5
+b1 %
+b1 6
+b101 ;
+b10 :
+1)
+#90000
+0)
+#95000
+1$
+b10 %
+b10 6
+b11 >
+1)
+#100000
+0)
+#105000
+b1 7
+1)
+#110000
+0)
+#115000
+b10 7
+1)
+#120000
+0)
+#125000
+b10010 !
+b10010 0
+b10000 '
+b10000 4
+b0 7
+0$
+1)
+#130000
+0)
+#135000
+b100 &
+b100 5
+b1 %
+b1 6
+b101 ;
+b11 :
+1)
+#140000
+0)
+#145000
+1$
+b10 %
+b10 6
+b100 >
+1)
+#150000
+0)
+#155000
+b1 7
+1)
+#160000
+0)
+#165000
+b10 7
+1)
+#170000
+0)
+#175000
+b10 !
+b10 0
+b0 '
+b0 4
+b0 7
+0$
+1)
+#180000
+0)
+#185000
+b11 &
+b11 5
+b0 %
+b0 6
+b101 =
+b100 <
+b101 ;
+b100 :
+1)
+#190000
+0)
+#195000
+b10 &
+b10 5
+b101 =
+b11 <
+b11 >
+1)
+#200000
+0)
+#205000
+b1 &
+b1 5
+b101 =
+b10 <
+b10 >
+1)
+#210000
+0)
+#215000
+1$
+b10 %
+b10 6
+b1 >
+1)
+#220000
+0)
+#225000
+b1 7
+1)
+#230000
+0)
+#235000
+b10 7
+1)
+#240000
+0)
+#245000
+b0 !
+b0 0
+b0 "
+b0 9
+b0 7
+0$
+1)
+#250000
+0)
+#255000
+b101 =
+b1 <
+b101 ;
+b1 :
+1)
+#260000
+0)
+#265000
+b101 =
+b101 ;
+1)
+#270000
+0)
+#275000
+b101 =
+b101 ;
+1)
+#280000
+0)
+#285000
+b101 =
+b101 ;
+1)
+#290000
+0)
+#295000
+b101 =
+b101 ;
+1)
+#300000
+0)
+#305000
+b101 =
+b101 ;
+1)
+#310000
+0)
+#315000
+b101 =
+b101 ;
+1)
+#320000
+0)
+#325000
+b1 !
+b1 0
+b0 &
+b0 5
+b0 %
+b0 6
+b1 '
+b1 4
+b101 =
+b101 ;
+1)
+b1 (
+b1 -
+b0 ?
+#330000
+0)
+#335000
+1$
+b10 %
+b10 6
+b0 >
+1)
+b0 (
+b0 -
+#340000
+0)
+#345000
+b1 7
+1)
+#350000
+0)
+b10 *
+b10 .
+b1 @
+#355000
+b11 !
+b11 0
+b10 7
+b10 #
+b10 8
+1)
+#360000
+0)
+b0 *
+b0 .
+#365000
+b10 !
+b10 0
+b0 '
+b0 4
+b0 7
+0$
+1)
+#370000
+0)
+#375000
+b1 &
+b1 5
+b1 %
+b1 6
+b101 ;
+b0 :
+1)
+#380000
+0)
+#385000
+1$
+b10 %
+b10 6
+b1 >
+1)
+#390000
+0)
+#395000
+b1 7
+1)
+#400000
+0)
+#405000
+b10 7
+1)
+#410000
+0)
+#415000
+b0 !
+b0 0
+b0 #
+b0 8
+b0 7
+0$
+1)
+#420000
+0)
+#425000
+b101 =
+b101 ;
+b1 :
+1)
+#430000
+0)
+#435000
+b101 =
+b101 ;
+1)
+#440000
+0)
+#445000
+b101 =
+b101 ;
+1)
+#450000
+0)
+#455000
+b101 =
+b101 ;
+1)
+#460000
+0)
+#465000
+b101 =
+b101 ;
+1)
+#470000
+0)
+#475000
+b101 =
+b101 ;
+1)
+#480000
+0)
+#485000
+b101 =
+b101 ;
+1)
+#490000
+0)
+#495000
+b101 =
+b101 ;
+1)
+#500000
+0)
+#505000
+b101 =
+b101 ;
+1)
+#510000
+0)
+#515000
+b101 =
+b101 ;
+1)
+#520000
+0)
+#525000
+b101 =
+b101 ;
+1)
+#530000
+0)
+#535000
+b101 =
+b101 ;
+1)
+#540000
+0)
+#545000
+b101 =
+b101 ;
+1)
+#550000
+0)
+#555000
+b101 =
+b101 ;
+1)
+#560000
+0)
+#565000
+b101 =
+b101 ;
+1)
+#570000
+0)
+#575000
+b101 =
+b101 ;
+1)
+#580000
+0)
+#585000
+b101 =
+b101 ;
+1)
+#590000
+0)
+#595000
+b101 =
+b101 ;
+1)
+#600000
+0)
+#605000
+b101 =
+b101 ;
+1)
+#610000
+0)
+#615000
+b101 =
+b101 ;
+1)
+#620000
+0)
+#625000
+b101 =
+b101 ;
+1)
+#630000
+0)
