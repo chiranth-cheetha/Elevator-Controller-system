@@ -131,12 +131,11 @@ Simulation waveform are examined to verify floor movement, direction changes, do
 ### Python Interface
 Python reads requests from request.txt and sends them to Godot through UDP
 
-### Python Interface
-Python reads requests from request.txt and sends them to Godot through UDP
+
 
 ### Godot 3D
 Godot receives the requests and provides a visual representation of the elevator operation
-## 6. FSM Design
+
 ## 6. FSM Design
 
 The elevator controller is based on a finite state machine.
