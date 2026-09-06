@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Verilog simulation outputs
+*.vcd
+*.out
+*.log
+
+# Godot generated files
+.godot/
+
+# Temporary files
+tempCodeRunnerFile.v
